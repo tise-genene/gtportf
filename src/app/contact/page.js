@@ -18,28 +18,8 @@ function Contact() {
             Contact Me
           </h1>
           <div className="p-1">
-            <div className="mb-4 p-3 border border-base-content/10 rounded-md">
-              <p className="text-sm">
-                Phone:{" "}
-                <a
-                  className="font-medium hover:underline"
-                  href={`tel:${about.phone}`}
-                >
-                  {about.phone}
-                </a>
-              </p>
-              <p className="text-sm mt-2">
-                Curriculum Vitae:{" "}
-                <a
-                  className="font-medium hover:underline"
-                  href={about.cv}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Download CV
-                </a>
-              </p>
-            </div>
+            {/* Contact form only — phone and CV links removed per request */}
+
             <form
               action={forms.formspreeUrl}
               method="POST"
