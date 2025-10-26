@@ -22,8 +22,7 @@ export default function Profile() {
         </svg>
       </div>
       <div className="mt-1.5 flex items-center gap-1">
-        <p className="text-base text-base-content/60">{about.role} // </p>
-        <p className="underline cursor-pointer text-base-content/90">Solo</p>
+        <p className="text-base text-base-content/60">{about.role}</p>
       </div>
       <div className="flex items-center mt-3 gap-2">
         {/* LinkedIn */}
