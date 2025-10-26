@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="light" data-scroll-behavior="smooth">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         {/* transparent favicon (data URI) so no avatar appears in the browser tab */}
         <link
@@ -36,6 +36,11 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
           rel="stylesheet"
         ></link>
+        {/* Theme is dark-by-default on the server (see mono-theme.css).
+            Client code (Navbar) will read localStorage / prefers-color-scheme
+            and update `data-theme` after hydration. Removing the pre-hydration
+            script prevents client DOM mutations before React hydrates and
+            avoids hydration mismatches. */}
       </head>
       <body className={`antialiased overflow-auto`}>
         <div className="w-[100%] md:w-[700px] m-auto">
