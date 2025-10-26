@@ -1,36 +1,58 @@
-/* Strict monochrome theme overrides */
+/* Monochrome theme variables for light and dark modes.
+   The site uses the `data-theme` attribute on <html> ("light" or "dark").
+   We expose a small set of CSS variables that the rest of the UI can use.
+*/
+
 :root {
+  /* default -> dark for server-side render (no client mutation before hydration) */
   --bg-0: #0a0a0a;
   --text-0: #ffffff;
   --muted: #bdbdbd;
+}
+
+/* light theme overrides when data-theme="light" is set on html */
+html[data-theme="light"] {
+  --bg-0: #ffffff;
+  --text-0: #0a0a0a;
+  --muted: #6b6b6b;
 }
 
 html,
 body,
 #__next {
   height: 100%;
-  background-color: var(--bg-0) !important;
-  color: var(--text-0) !important;
+  background-color: var(--bg-0);
+  color: var(--text-0);
+  transition: background-color 250ms ease, color 250ms ease;
 }
 
 a {
-  color: var(--text-0) !important;
+  color: var(--text-0);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--muted) !important;
+  color: var(--muted);
 }
 
 .muted,
 small,
 p.muted {
-  color: var(--muted) !important;
+  color: var(--muted);
 }
 
 svg {
   fill: currentColor;
   stroke: currentColor;
+  transition: fill 250ms ease, stroke 250ms ease, color 250ms ease;
+}
+
+/* also smooth link and muted color changes */
+a,
+.muted,
+small,
+p.muted {
+  transition: color 250ms ease;
 }
 
 :focus {
