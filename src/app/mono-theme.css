@@ -1,0 +1,39 @@
+/* Strict monochrome theme overrides */
+:root {
+  --bg-0: #0a0a0a;
+  --text-0: #ffffff;
+  --muted: #bdbdbd;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  background-color: var(--bg-0) !important;
+  color: var(--text-0) !important;
+}
+
+a {
+  color: var(--text-0) !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--muted) !important;
+}
+
+.muted,
+small,
+p.muted {
+  color: var(--muted) !important;
+}
+
+svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+:focus {
+  outline: 2px solid var(--text-0);
+  outline-offset: 2px;
+}

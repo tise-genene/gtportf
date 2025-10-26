@@ -1,120 +1,123 @@
 export const about = {
-    name: "Your Name",
-    role: "Your Profession",
-    about: "A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.",
-    email: "your.email@example.com",
+  name: "Genene",
+  role: "Fullstack Web & Mobile Developer",
+  about:
+    "I’m a software developer from Addis Ababa, Ethiopia. I craft smart, scalable, and user-friendly digital solutions that solve real problems and drive results. Let’s turn your idea into impact.",
+  email: "tisegenene@gmail.com",
+  phone: "+251932508910",
+  cv: "/docs/cv.pdf",
 };
 
 export const seo = {
-    title: `${about.name} | ${about.role}`,
-    description: "Minimal, clean Next.js portfolio template for developers seeking a simple, professional online presence without extra complexity.",
-    keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
-}
+  title: `${about.name} | ${about.role}`,
+  description:
+    "Fullstack Web & Mobile Developer from Addis Ababa — modern web apps, real-time systems and scalable SaaS solutions.",
+  keywords:
+    "Genene, Fullstack, Next.js, Laravel, React, portfolio, software developer",
+};
 
 export const forms = {
-    formspreeUrl: "https://formspree.io/f/<url>",
-}
+  formspreeUrl: "https://formspree.io/f/<url>",
+};
 
 export const skills = [
-    { name: "Html", alt: "html logo", icon: "/html.svg" },
-    { name: "Css", alt: "css logo", icon: "/css.svg" },
-    { name: "Js", alt: "js logo", icon: "/js.svg" },
-    { name: "Tailwind", alt: "tailwind logo", icon: "/tailwind.svg" },
-    { name: "React Js", alt: "react logo", icon: "/react.svg" },
-    { name: "Next Js", alt: "nextjs logo", icon: "/nextjs.svg" },
+  { name: "Next.js", alt: "nextjs logo", icon: "/nextjs.svg" },
+  { name: "React", alt: "react logo", icon: "/react.svg" },
+  { name: "TypeScript", alt: "typescript", icon: "/js.svg" },
+  { name: "Laravel", alt: "laravel", icon: "/file.svg" },
+  { name: "Node.js", alt: "nodejs", icon: "/js.svg" },
+  { name: "Tailwind CSS", alt: "tailwind", icon: "/tailwind.svg" },
+  { name: "Flutter", alt: "flutter", icon: "/react.svg" },
 ];
 
 export const socials = {
-    github: "https://github.com/sachinbhujel",
-    twitter: "https://twitter.com/sachinbhujel909",
-    instagram: "https://www.instagram.com/imsachinbhujel",
-    facebook: "https://www.facebook.com/imsachinbhujel",
+  github: "https://github.com/tise-genene",
+  linkedin: "https://www.linkedin.com/in/genene-tise-253037234/",
+  twitter: "https://x.com/genene_tise",
+  instagram: "https://www.linkedin.com/in/genene-tise-253037234/",
+  facebook: "https://x.com/genene_tise",
 };
 
 export const projects = {
-    pinProjects: [
-        {
-            title: "Project 1",
-            description:
-                "A sleek, modern portfolio site to showcase your work and skills. Responsive design with smooth navigation and SEO optimization.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-        {
-            title: "Project 2",
-            description:
-                "A clean, minimal blog setup featuring dynamic content, category filters, and easy-to-read layouts. Perfect for sharing your ideas.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-        {
-            title: "Project 3",
-            description:
-                "A fast and scalable online store with product listings, cart functionality, and seamless checkout experience. Built for performance.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-    ],
-    otherProjects: [
-        {
-            title: "Project 4",
-            description:
-                "A sleek, modern portfolio site to showcase your work and skills. Responsive design with smooth navigation and SEO optimization.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-        {
-            title: "Project 5",
-            description:
-                "A clean, minimal blog setup featuring dynamic content, category filters, and easy-to-read layouts. Perfect for sharing your ideas.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-        {
-            title: "Project 6",
-            description:
-                "A fast and scalable online store with product listings, cart functionality, and seamless checkout experience. Built for performance.",
-            tags: ["CSS", "React Js"],
-            link: "",
-        },
-    ],
+  pinProjects: [
+    {
+      title: "Student-Tutor Marketplace",
+      description:
+        "Next.js + TypeScript marketplace with real-time messaging, notifications, and a comprehensive booking system.",
+      tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+      live: "https://genenetise.com/tutor-marketplace.vercel.app",
+      github: "https://github.com/tise-genene/tutor-marketplace",
+    },
+    {
+      title: "ScholarPath",
+      description:
+        "Scholarship counseling platform with booking, LMS integration, and premium video content. Built with Next.js and Tailwind.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+      live: "https://genenetise.com/scholarpath-omega.vercel.app",
+      github: "https://github.com/tise-genene/scholarpath",
+    },
+    {
+      title: "HRMS — Yekatit 12 Hospital",
+      description:
+        "Human Resource Management System built with CodeIgniter / PHP and MySQL to streamline employee management, payroll, and performance tracking.",
+      tags: ["PHP", "CodeIgniter", "MySQL"],
+      github: "https://github.com/tise-genene/HR_Process_Optimizer",
+    },
+  ],
+  otherProjects: [
+    {
+      title: "Laravel Restaurant Reservation System",
+      description:
+        "Reservation and booking system for a restaurant built with Laravel and MySQL, featuring seat and meal selection.",
+      tags: ["Laravel", "MySQL"],
+      github:
+        "https://github.com/tise-genene/Laravel-Restaurant-Reservation-System-project",
+    },
+  ],
 };
 
 export const experience = [
-    {
-        title: "Frontend Developer at Tech Solutions",
-        description:
-            "Worked on building and maintaining responsive web applications using React.js and Next.js, improving UI performance and user experience.",
-        date: "15/01/2024",
-    },
-    {
-        title: "Web Developer Intern at Creative Studio",
-        description:
-            "Assisted in designing website layouts, wrote clean HTML/CSS code, and collaborated with the team on JavaScript features for client projects.",
-        date: "10/06/2023",
-    },
-    {
-        title: "Junior Developer at Innovate Labs",
-        description:
-            "Developed and tested frontend components, optimized web pages for speed, and contributed to team code reviews and debugging sessions.",
-        date: "01/09/2022",
-    },
+  {
+    title: "Software Engineer — Commercial Bank of Ethiopia",
+    description:
+      "Maintain and enhance CBE's corporate website — performance, accessibility, and UX improvements. Tech: React, Flutter.",
+    date: "Nov 2024 - Present",
+  },
+  {
+    title: "Software Developer — Eagle Educational Consult PLC",
+    description:
+      "Built an LMS and a student–tutor marketplace with booking and messaging features. Tech: React, Tailwind CSS.",
+    date: "Aug 2023 - Nov 2024",
+  },
+  {
+    title: "Emerging Technologist Fellow — Millennium Campus Network (MCN)",
+    description:
+      "Delivered programming workshops to 100+ high-school students; designed curriculum and learning materials.",
+    date: "Aug 2023 - Jan 2024",
+  },
+  {
+    title: "Software Developer — Ethiopian Science and Technology Agency",
+    description:
+      "Implemented HRMS modules (onboarding & leave management) using Laravel and MySQL; focused on reliability and data integrity.",
+    date: "Jun 2023 - Aug 2023",
+  },
 ];
 
 export const blogs = [
-    {
-        title: "Understanding React Hooks",
-        date: "12/03/2025",
-        link: "#",
-    },
-    {
-        title: "CSS Grid vs Flexbox: When to Use Which",
-        date: "25/12/2024",
-        link: "#",
-    },
-    {
-        title: "Next.js SEO Best Practices",
-        date: "10/07/2024",
-        link: "#",
-    },
+  {
+    title: "Mastering Middleware in ASP.NET Core: My Journey and Key Takeaways",
+    date: "31/12/2024",
+    link: "https://medium.com/p/41cd3b8ca38d",
+  },
+  {
+    title:
+      "From Rural Roots to Tech Trailblazer: A Journey of Family Support and Unwavering Belief",
+    date: "22/02/2024",
+    link: "https://medium.com/@tisegenene/from-rural-roots-to-tech-trailblazer-a-journey-of-family-support-and-unwavering-belief-c081175731c9",
+  },
+  {
+    title: "All posts on Medium",
+    date: "",
+    link: "https://medium.com/@tisegenene",
+  },
 ];

@@ -1,8 +1,36 @@
+# gtportf
+
+Personal portfolio site for Genene Tise (Genenetise). Minimal black-and-white theme.
+
+This repository contains a Next.js (App Router) portfolio template customized with local profile, CV, projects and Medium posts.
+
+What’s included
+
+- Minimal Next.js app (App Router)
+- Tailwind CSS + DaisyUI
+- Local assets: `/public/images/gt.jpeg`, `/public/docs/cv.pdf`
+
+How to run locally
+
+1. npm install
+2. npm run dev
+
+Build for production
+
+1. npm run build
+2. npm start
+
+Deploy
+Connect the repo on Vercel and deploy. Build command: `npm run build`.
+
+License: MIT (see LICENSE)
+
 # NextJS Portfolio Template
 
 A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.
 
 ## Features
+
 - 🚀 Fast and lightweight
 - 📱 Fully responsive
 - 🔍 SEO friendly
