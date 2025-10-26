@@ -34,7 +34,7 @@ export default function Experience() {
           </ol>
           {/* Contact / resource button row */}
           <div className="mt-8 mb-8 p-4 border border-base-content/10 rounded-md bg-transparent flex flex-wrap items-center gap-3">
-            <a
+            {/* <a
               href="/contact"
               title="Schedule a meeting"
               aria-label="Schedule a meeting"
@@ -54,7 +54,7 @@ export default function Experience() {
               <span className="font-mono text-sm font-semibold">
                 calendar.sh
               </span>
-            </a>
+            </a> */}
 
             <a
               href={socials.github}
