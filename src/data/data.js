@@ -27,7 +27,7 @@ export const skills = [
   { name: "Laravel", alt: "laravel", icon: "/file.svg" },
   { name: "Node.js", alt: "nodejs", icon: "/js.svg" },
   { name: "Tailwind CSS", alt: "tailwind", icon: "/tailwind.svg" },
-  { name: "Flutter", alt: "flutter", icon: "/react.svg" },
+  { name: "React Native", alt: "react native", icon: "/react.svg" },
 ];
 
 export const socials = {
@@ -41,11 +41,27 @@ export const socials = {
 export const projects = {
   pinProjects: [
     {
+      title: "CBE Corporate Website",
+      description:
+        "Commercial Bank of Ethiopia corporate website — front-end enhancements, performance and accessibility work.",
+      tags: ["React", "Next.js", "Accessibility"],
+      live: "https://www.combanketh.et",
+      link: "https://www.combanketh.et",
+    },
+    {
+      title: "Taptosign",
+      description:
+        "Taptosign — digital signing platform (front-end & integrations).",
+      tags: ["React", "Node.js", "API"],
+      live: "https://taptosign.com",
+      link: "https://taptosign.com",
+    },
+    {
       title: "Student-Tutor Marketplace",
       description:
         "Next.js + TypeScript marketplace with real-time messaging, notifications, and a comprehensive booking system.",
       tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      live: "https://genenetise.com/tutor-marketplace.vercel.app",
+      link: "https://genenetise.com/tutor-marketplace.vercel.app",
       github: "https://github.com/tise-genene/tutor-marketplace",
     },
     {
@@ -53,8 +69,16 @@ export const projects = {
       description:
         "Scholarship counseling platform with booking, LMS integration, and premium video content. Built with Next.js and Tailwind.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-      live: "https://genenetise.com/scholarpath-omega.vercel.app",
+      link: "https://genenetise.com/scholarpath-omega.vercel.app",
       github: "https://github.com/tise-genene/scholarpath",
+    },
+    {
+      title: "EagleBot",
+      description:
+        "Automation bot project (EagleBot). Source and details available on GitHub. A Telegram bot is available at @eagletutorialsservicesbot.",
+      tags: ["Python", "Bot", "Automation"],
+      github: "https://github.com/tise-genene/eaglebot",
+      telegram: "https://t.me/eagletutorialsservicesbot",
     },
     {
       title: "HRMS — Yekatit 12 Hospital",
@@ -78,9 +102,15 @@ export const projects = {
 
 export const experience = [
   {
+    title: "Freelance Software Developer — Upwork",
+    description:
+      "Freelance software development on Upwork, delivering web and mobile solutions including fullstack apps, integrations, and maintenance. Tech: React, Next.js, Node, Laravel (summary from Upwork profile).",
+    date: "Jan 2025 - Present",
+  },
+  {
     title: "Software Engineer — Commercial Bank of Ethiopia",
     description:
-      "Maintain and enhance CBE's corporate website — performance, accessibility, and UX improvements. Tech: React, Flutter.",
+      "Maintain and enhance CBE's corporate website — performance, accessibility, and UX improvements. Tech: React, React Native.",
     date: "Nov 2024 - Present",
   },
   {
