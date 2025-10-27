@@ -22,7 +22,35 @@ export default function Profile() {
         </svg>
       </div>
       <div className="mt-1.5 flex items-center gap-1">
-        <p className="text-base text-base-content/60">{about.role}</p>
+        <div>
+          <p className="text-base text-base-content/60">{about.role}</p>
+          <h2 className="text-lg font-semibold mt-2">
+            I build production-ready Fintech &amp; SaaS products — React,
+            Next.js, Tailwind, Laravel, NodeJS, Python.
+          </h2>
+          <p className="text-sm text-base-content/70 mt-1 max-w-xl">
+            Launched production apps for banks and startups (CBE, Taptosign,
+            EagleBot). Available for senior roles and contract engagements.
+          </p>
+          <div className="flex gap-2 mt-3">
+            <a
+              href="#selected-work"
+              className="px-3 py-2 rounded-md border border-base-content/20 hover:bg-base-200 text-sm"
+              aria-label="See selected work"
+            >
+              See selected work
+            </a>
+            <a
+              href={about.cv}
+              className="px-3 py-2 rounded-md border border-base-content/20 hover:bg-base-200 text-sm"
+              aria-label="Download resume PDF"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
       </div>
       <div className="flex items-center mt-3 gap-2">
         {/* LinkedIn */}
