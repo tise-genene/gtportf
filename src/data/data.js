@@ -47,6 +47,7 @@ export const projects = {
       tags: ["React", "Next.js", "Accessibility"],
       live: "https://www.combanketh.et",
       link: "https://www.combanketh.et",
+      caseStudy: "/projects/cbe-case-study",
     },
     {
       title: "Taptosign",

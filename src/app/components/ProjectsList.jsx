@@ -84,6 +84,25 @@ export default function ProjectsList() {
                   </a>
                 )}
 
+                {item.caseStudy && (
+                  <a
+                    href={item.caseStudy}
+                    title="Read case study"
+                    className="p-2 rounded-md hover:bg-base-200"
+                  >
+                    {/* Case study icon */}
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 2L2 7l10 5 10-5-10-5zm0 7.5L4 7.14v6.72l8 4 8-4V7.14L12 9.5z" />
+                    </svg>
+                  </a>
+                )}
+
                 {item.link && (
                   <a
                     href={item.link}

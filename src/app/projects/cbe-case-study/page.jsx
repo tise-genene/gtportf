@@ -101,7 +101,11 @@ export default function CBECaseStudy() {
 
       <footer className="mt-8">
         <p className="text-sm text-base-content/70">
-          Interested in similar work? <Link href="/contact" className="underline">Contact me</Link> or download my CV.
+          Interested in similar work?{" "}
+          <Link href="/contact" className="underline">
+            Contact me
+          </Link>{" "}
+          or download my CV.
         </p>
       </footer>
     </main>
