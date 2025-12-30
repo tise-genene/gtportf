@@ -1,5 +1,5 @@
 export const about = {
-  name: "Genene",
+  name: "Genene T.",
   role: "Fullstack Web & Mobile Developer",
   about:
     "I’m a software developer from Addis Ababa, Ethiopia. I craft smart, scalable, and user-friendly digital solutions that solve real problems and drive results. Let’s turn your idea into impact.",
