@@ -17,7 +17,9 @@ export const seo = {
 };
 
 export const forms = {
-  formspreeUrl: "https://formspree.io/f/<url>",
+  // Optional: set to your Formspree endpoint (e.g. "https://formspree.io/f/abcdefg").
+  // When empty, the contact form falls back to composing an email to `about.email`.
+  formspreeUrl: "https://formspree.io/f/mojqzjrv",
 };
 
 export const skills = [
