@@ -29,16 +29,18 @@ jobs:
       - name: Build (static export)
         run: npm run build
 
-      - name: Upload to staging via rsync (SFTP)
-        uses: burnett01/rsync-deployments@v7.0.1
+      - name: Pack static site
+        run: tar -czf site.tgz -C out .
+
+      - name: Upload tarball via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          switches: -avzr --delete
-          path: out/
-          remote_path: ${{ secrets.DA_STAGING_DIR }}
-          remote_host: ${{ secrets.DA_SSH_HOST }}
-          remote_user: ${{ secrets.DA_SSH_USER }}
-          remote_port: ${{ secrets.DA_SSH_PORT }}
-          remote_key: ${{ secrets.DA_SSH_PRIVATE_KEY }}
+          host: ${{ secrets.DA_SSH_HOST }}
+          username: ${{ secrets.DA_SSH_USER }}
+          key: ${{ secrets.DA_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.DA_SSH_PORT }}
+          source: site.tgz
+          target: ~/deploy_upload
 
       - name: Swap staging -> public_html (keeps backup)
         uses: appleboy/ssh-action@v1.0.3
@@ -54,6 +56,19 @@ jobs:
             LIVE="${{ secrets.DA_LIVE_DIR }}"
             TS=$(date +%Y%m%d%H%M%S)
             BACKUP="${LIVE}_backup_${TS}"
+
+            ARCHIVE="$HOME/deploy_upload/site.tgz"
+
+            if [ ! -f "$ARCHIVE" ]; then
+              echo "Upload missing: $ARCHIVE" >&2
+              exit 1
+            fi
+
+            # Recreate staging dir and extract the tarball into it
+            rm -rf "$STAGING"
+            mkdir -p "$STAGING"
+            tar -xzf "$ARCHIVE" -C "$STAGING"
+            rm -f "$ARCHIVE"
 
             if [ ! -d "$STAGING" ]; then
               echo "Staging directory not found: $STAGING" >&2
