@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Upload to staging via rsync (SFTP)
-        uses: burnett01/rsync-deployments@v7.0.2
+        uses: burnett01/rsync-deployments@v7.0.1
         with:
           switches: -avzr --delete
           path: out/
