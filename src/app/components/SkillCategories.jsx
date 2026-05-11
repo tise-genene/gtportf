@@ -2,7 +2,7 @@
 
 export default function SkillCategories() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 scroll-mt-14" id="skills">
       <h2 className="text-xl font-medium before:content-['>'] before:mr-1">
         Skills
       </h2>

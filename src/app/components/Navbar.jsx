@@ -52,6 +52,11 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/#skills" className="hover:underline">
+                    Skills
+                  </Link>
+                </li>
+                <li>
                   <Link href="/#projects" className="hover:underline">
                     Projects
                   </Link>
@@ -59,6 +64,11 @@ export default function Navbar() {
                 <li>
                   <Link href="/#experience" className="hover:underline">
                     Experience
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#education" className="hover:underline">
+                    Education
                   </Link>
                 </li>
                 <li>

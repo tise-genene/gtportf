@@ -2,7 +2,7 @@
 
 export default function Education() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 scroll-mt-14" id="education">
       <h2 className="text-xl font-medium before:content-['>'] before:mr-1">
         Education
       </h2>

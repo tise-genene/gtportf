@@ -7,7 +7,7 @@ export default function TechLists() {
     const [failedIcons, setFailedIcons] = useState({});
 
     return (
-        <div className="mt-10">
+        <div className="mt-10" id="tech-stack">
              <h2 className="text-xl font-medium before:content-['>'] before:mr-1">Tech Stack</h2>
             <Marquee duration="10s">
                 <div className="flex gap-8 mt-4">
