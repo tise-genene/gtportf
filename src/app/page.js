@@ -7,7 +7,7 @@ import SelectedWork from "./components/SelectedWork";
 import SkillCategories from "./components/SkillCategories";
 import Education from "./components/Education";
 import Volunteering from "./components/Volunteering";
-import Links from "./components/Links";
+
 
 export default function Home() {
   return (
@@ -23,7 +23,6 @@ export default function Home() {
           <Experience />
           <Education />
           <Volunteering />
-          <Links />
         </main>
       </div>
     </>
