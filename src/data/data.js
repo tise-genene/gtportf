@@ -58,6 +58,7 @@ export const projects = {
       tags: ["React", "React Native", "Node.js", "PostgreSQL", "Flutter"],
       live: "https://www.combanketh.et",
       link: "https://www.combanketh.et",
+      caseStudy: "/projects/cbe-case-study",
     },
     {
       title: "Taptosign",

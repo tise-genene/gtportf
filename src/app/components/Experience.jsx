@@ -73,7 +73,7 @@ export default function Experience() {
               title="Upwork"
               aria-label="Upwork"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-3 py-2 border border-base-content/10 rounded-md text-sm hover:bg-base-content/5"
             >
               <svg
@@ -92,7 +92,7 @@ export default function Experience() {
               title="GitHub"
               aria-label="GitHub"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-3 py-2 border border-base-content/10 rounded-md text-sm hover:bg-base-content/5"
             >
               <svg
@@ -131,7 +131,7 @@ export default function Experience() {
               title="X / Twitter"
               aria-label="X profile"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-3 py-2 border border-base-content/10 rounded-md text-sm hover:bg-base-content/5"
             >
               <svg
@@ -150,7 +150,7 @@ export default function Experience() {
               title="LinkedIn"
               aria-label="LinkedIn"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-3 py-2 border border-base-content/10 rounded-md text-sm hover:bg-base-content/5"
             >
               <svg
