@@ -52,7 +52,7 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#skills" className="hover:underline">
+                  <Link href="/#tech-stack" className="hover:underline">
                     Skills
                   </Link>
                 </li>
