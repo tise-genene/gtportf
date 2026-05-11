@@ -9,16 +9,8 @@ export const metadata = {
 
 export default function CBECaseStudy() {
   const project = projects.pinProjects.find(
-    (p) => p.title === "Commercial Bank of Ethiopia"
+    (p) => p.title === "CBE Corporate Website"
   );
-
-  if (!project) {
-    return (
-      <main className="mt-6 p-4 max-w-3xl m-auto">
-        <p>Project not found.</p>
-      </main>
-    );
-  }
 
   return (
     <main className="mt-6 p-4 max-w-3xl m-auto">

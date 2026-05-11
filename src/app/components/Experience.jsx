@@ -28,18 +28,6 @@ export default function Experience() {
                   <p className="mt-0.5 text-sm text-base-content/80">
                     {item.description}
                   </p>
-                  {item.tags && item.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {item.tags.map((tag, i) => (
-                        <span
-                          key={i}
-                          className="text-xs border rounded-md px-3 py-1 text-base-content/70"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </li>
             ))}
