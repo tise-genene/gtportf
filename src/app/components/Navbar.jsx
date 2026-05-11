@@ -42,7 +42,7 @@ export default function Navbar() {
             <div className="flex items-center gap-4">
               <ul
                 className={`w-[90%] sm:w-full sm:flex-row flex-col sm:bg-transparent bg-base-200 backdrop-blur-sm sm:static fixed top-12 left-[5%] rounded-2xl sm:border-transparent
-                                         border mx-auto items-center text-base sm:p-0 p-2 gap-2 sm:gap-4 ${
+                                         mx-auto items-center text-base sm:p-0 p-2 gap-2 sm:gap-4 ${
                                            hideOnMobile ? "hidden" : "flex"
                                          } sm:flex`}
               >
