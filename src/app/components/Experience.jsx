@@ -28,6 +28,18 @@ export default function Experience() {
                   <p className="mt-0.5 text-sm text-base-content/80">
                     {item.description}
                   </p>
+                  {item.tags && item.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {item.tags.map((tag, i) => (
+                        <span
+                          key={i}
+                          className="text-xs border rounded-md px-3 py-1 text-base-content/70"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </li>
             ))}
@@ -55,6 +67,25 @@ export default function Experience() {
                 calendar.sh
               </span>
             </a> */}
+
+            <a
+              href={socials.upwork}
+              title="Upwork"
+              aria-label="Upwork"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 px-3 py-2 border border-base-content/10 rounded-md text-sm hover:bg-base-content/5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M18.34 9.47a2.08 2.08 0 0 0-1.66-.84H9.13v9.54h4.55c1.02 0 1.76-.3 2.24-.9.48-.6.72-1.4.72-2.4 0-1.02-.31-1.76-.88-2.24zM7.39 5.18c-.6 0-1.08.2-1.46.6-.38.4-.56.96-.56 1.68 0 .72.18 1.28.56 1.68.38.4.86.6 1.46.6h7.55V5.18zM9.13 4h7.55a2.6 2.6 0 0 1 1.84.7c.54.48.82 1.16.82 2.04 0 .88-.28 1.6-.82 2.14-.54.54-1.16.82-1.84.82H9.13zM6.66 5.18a2.08 2.08 0 0 0-1.66-.84H3V9.68h2c.72 0 1.26-.22 1.66-.72.4-.5.58-1.2.58-2.1 0-1.02-.26-1.68-.58-1.68z" />
+              </svg>
+              <span className="font-mono text-sm font-semibold">upwork.md</span>
+            </a>
 
             <a
               href={socials.github}

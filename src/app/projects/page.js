@@ -15,14 +15,16 @@ function Projects() {
                     All Projects
                 </h1>
                 <div className="flex flex-col gap-2">
-                    {projects.pinProjects.map((item, index) => (
-                        <a
-                            href={item.link}
-                            key={index}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group cursor-pointer p-4 border-2 border-base-content/20 hover:border-base-content/80 rounded-2xl hover:scale-102 transition-transform duration-200"
-                        >
+                    {projects.pinProjects.map((item, index) => {
+                        const hasLiveLink = item.link && /^https?:\/\//.test(item.link);
+                        return (
+                            <a
+                                href={hasLiveLink ? item.link : item.github}
+                                key={index}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group cursor-pointer p-4 border-2 border-base-content/20 hover:border-base-content/80 rounded-2xl hover:scale-102 transition-transform duration-200"
+                            >
                             <div className="flex flex-col gap-2 justify-between">
                                 <div className="flex items-center justify-between">
                                     <h2 className="font-semibold text-lg">
@@ -57,15 +59,18 @@ function Projects() {
                                 </div>
                             </div>
                         </a>
-                    ))}
-                    {projects.otherProjects.map((item, index) => (
-                        <a
-                            href={item.link}
-                            key={index}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group cursor-pointer p-4 border-2 border-base-content/20 hover:border-base-content/80 rounded-2xl hover:scale-102 transition-transform duration-200"
-                        >
+                    );
+                    })}
+                    {projects.otherProjects.map((item, index) => {
+                        const hasLiveLink = item.link && /^https?:\/\//.test(item.link);
+                        return (
+                            <a
+                                href={hasLiveLink ? item.link : item.github}
+                                key={index}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group cursor-pointer p-4 border-2 border-base-content/20 hover:border-base-content/80 rounded-2xl hover:scale-102 transition-transform duration-200"
+                            >
                             <div className="flex flex-col gap-2 justify-between">
                                 <div className="flex items-center justify-between">
                                     <h2 className="font-semibold text-lg">
@@ -100,7 +105,8 @@ function Projects() {
                                 </div>
                             </div>
                         </a>
-                    ))}
+                    );
+                    })}
                 </div>
             </main>
         </div>
