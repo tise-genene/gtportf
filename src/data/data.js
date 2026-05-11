@@ -39,7 +39,6 @@ export const socials = {
   github: "https://github.com/tise-genene",
   linkedin: "https://www.linkedin.com/in/genene-tise-253037234/",
   twitter: "https://x.com/genene_tise",
-  upwork: "https://www.upwork.com/freelancers/~YOUR_UPWORK_ID",
 };
 
 export const projects = {
