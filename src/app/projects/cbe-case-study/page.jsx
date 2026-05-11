@@ -2,15 +2,23 @@ import Link from "next/link";
 import { projects } from "@/data/data";
 
 export const metadata = {
-  title: "CBE Corporate Website — Case study | Genene",
+  title: "Commercial Bank of Ethiopia — Case study | Genene",
   description:
-    "Case study: Commercial Bank of Ethiopia corporate website — performance, accessibility and UX improvements delivered by Genene.",
+    "Case study: shipping full-stack web and mobile features within a high-availability banking system serving 40M+ customers. Performance optimization, REST API architecture, and UI redesign.",
 };
 
 export default function CBECaseStudy() {
   const project = projects.pinProjects.find(
-    (p) => p.title === "CBE Corporate Website"
+    (p) => p.title === "Commercial Bank of Ethiopia"
   );
+
+  if (!project) {
+    return (
+      <main className="mt-6 p-4 max-w-3xl m-auto">
+        <p>Project not found.</p>
+      </main>
+    );
+  }
 
   return (
     <main className="mt-6 p-4 max-w-3xl m-auto">

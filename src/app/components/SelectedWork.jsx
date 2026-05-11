@@ -4,7 +4,7 @@ import { projects } from "@/data/data";
 
 export default function SelectedWork() {
   // pick the three projects we want to highlight by title
-  const picks = ["CBE Corporate Website", "Taptosign", "EagleBot"];
+  const picks = ["Eagle Pathway", "Commercial Bank of Ethiopia", "Taptosign"];
 
   const items = projects.pinProjects.filter((p) => picks.includes(p.title));
 
