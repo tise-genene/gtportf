@@ -4,10 +4,6 @@ import About from "./components/About";
 import Profile from "./components/Profile";
 import Experience from "./components/Experience";
 import SelectedWork from "./components/SelectedWork";
-import SkillCategories from "./components/SkillCategories";
-import Education from "./components/Education";
-import Volunteering from "./components/Volunteering";
-import Links from "./components/Links";
 
 export default function Home() {
   return (
@@ -17,13 +13,9 @@ export default function Home() {
           <Profile />
           <About />
           <TechLists />
-          <SkillCategories />
           <SelectedWork />
           <ProjectsList />
           <Experience />
-          <Education />
-          <Volunteering />
-          <Links />
         </main>
       </div>
     </>
