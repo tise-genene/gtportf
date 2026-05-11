@@ -2,9 +2,9 @@ import Link from "next/link";
 import { projects } from "@/data/data";
 
 export const metadata = {
-  title: "CBE Corporate Website — Case study | Genene",
+  title: "Commercial Bank of Ethiopia — Case study | Genene",
   description:
-    "Case study: Commercial Bank of Ethiopia corporate website — performance, accessibility and UX improvements delivered by Genene.",
+    "Case study: shipping full-stack web and mobile features within a high-availability banking system serving 40M+ customers. REST API architecture, PostgreSQL optimization, and UI redesign.",
 };
 
 export default function CBECaseStudy() {
