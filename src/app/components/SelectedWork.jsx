@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 import Link from "next/link";
 import { projects } from "@/data/data";
 
 export default function SelectedWork() {
   // pick the three projects we want to highlight by title
-  const picks = ["CBE Corporate Website", "Taptosign", "EagleBot"];
+  const picks = ["Eagle Pathway", "Commercial Bank of Ethiopia", "Taptosign"];
 
   const items = projects.pinProjects.filter((p) => picks.includes(p.title));
 
@@ -34,7 +34,7 @@ export default function SelectedWork() {
                 aria-label={`Open ${item.title}`}
                 className="text-base-content/60 hover:text-base-content/90"
               >
-                ↗
+                Γåù
               </a>
             </div>
             <p className="text-sm text-base-content/80 mt-2">
