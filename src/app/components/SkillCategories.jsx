@@ -16,7 +16,7 @@ export default function SkillCategories() {
               {cat.skills.map((skill, i) => (
                 <span
                   key={i}
-                  className="text-xs border border-gray-400 font-medium text-base-content/70 border rounded-md px-4 py-1"
+                  className="text-xs border border-gray-400 font-medium text-base-content/70 rounded-md px-4 py-1"
                 >
                   {skill}
                 </span>
