@@ -18,7 +18,7 @@ export default function TechLists() {
                         >
                             <div className="border-2 p-2 border-base-content/20 shadow-md rounded-sm dark:bg-base-content">
                                 {failedIcons[skill.name] ? (
-                                    <span className="w-10 h-10 flex items-center justify-center text-xs font-bold text-base-100">
+                                    <span className="w-10 h-10 flex items-center justify-center text-xs font-bold dark:text-base-100">
                                         {skill.name.slice(0, 3).toUpperCase()}
                                     </span>
                                 ) : (
