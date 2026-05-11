@@ -1,0 +1,10 @@
+## Summary
+- Replaced all content in `src/data/data.js` with updated profile (Genene Tise), projects, experience, skills, and socials
+- Downloaded and added 8 missing skill SVG icons to `/public/`: laravel, nodejs, typescript, postgresql, supabase, flutter, python, docker
+- Fixed `projects/page.js` to only show live links when URL is a valid external URL (removed broken non-URL `link` fields)
+- Added Upwork social link to Experience component
+- Added `tags` array rendering to Experience component (matching project tag pill style)
+- Updated SelectedWork picks to use new project titles
+- Added graceful fallback in TechLists for missing icons (shows 3-letter abbreviation text)
+- Fixed CBE case study page to use new project title "Commercial Bank of Ethiopia"
+- Added `"use client"` directive to TechLists (required for `useState` onError handler)

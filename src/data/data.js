@@ -153,6 +153,61 @@ export const experience = [
   },
 ];
 
+export const skillCategories = [
+  {
+    category: "Backend",
+    skills: ["Laravel", "Node.js", "REST APIs", "PostgreSQL", "MySQL", "MongoDB", "Supabase"],
+  },
+  {
+    category: "Frontend",
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "React Native", "Flutter"],
+  },
+  {
+    category: "DevOps / Tools",
+    skills: ["Git", "Vercel", "Render", "Docker", "CI/CD", "Agile"],
+  },
+  {
+    category: "AI / CS",
+    skills: ["Python", "Machine Learning", "Data Structures", "System Design", "Prompt Engineering"],
+  },
+];
+
+export const education = [
+  {
+    degree: "B.Sc. Information Systems",
+    institution: "Addis Ababa University",
+    grade: "GPA 3.51 · Great Distinction",
+    note: "Thesis: AI-Powered HRMS for Ethiopian Government Offices",
+    year: "2021 – 2024",
+  },
+  {
+    degree: "Digital Product Development From Scratch",
+    institution: "Technical University of Munich",
+    grade: "Great Distinction",
+    note: "Via Coursera",
+    year: "Dec 2024",
+  },
+  {
+    degree: "Founders Academy",
+    institution: "ALX Ventures",
+    grade: "",
+    note: "Entrepreneurship & product strategy",
+    year: "Dec 2024",
+  },
+];
+
+export const volunteering = [
+  {
+    title: "Volunteer Instructor & Workshop Facilitator",
+    location: "Addis Ababa · 2023 – Present",
+    points: [
+      "Taught C++, Python, and web development to 100+ early-career students through community-led sessions.",
+      "Runs free workshops on freelancing and software development for aspiring developers.",
+      "Active open-source contributor on GitHub.",
+    ],
+  },
+];
+
 export const blogs = [
   {
     title: "Mastering Middleware in ASP.NET Core: My Journey and Key Takeaways",
