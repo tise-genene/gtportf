@@ -11,6 +11,12 @@ export default function About() {
                     <p className="text-base text-base-content/80">
                         {about.about}
                     </p>
+                    <div className="flex items-center gap-2 my-1">
+                        <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-xs font-medium border border-base-content/20 bg-base-content/5 text-base-content/90">
+                            <span className="size-2 rounded-full bg-emerald-500"></span>
+                            AI Trainer for AfterQuery, evaluating LLM-generated code.
+                        </span>
+                    </div>
                     <p className="text-base text-base-content/80">
                         If you’ve got any questions or just feel like chatting,
                         send me an{" "}

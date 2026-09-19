@@ -53,6 +53,7 @@ export const projects = {
       live: "https://eaglespathway.com",
       playstore: "https://play.google.com/store/apps/details?id=com.eaglepathway.app",
       github: "https://github.com/Eagle-Pathway/eagle-pathway",
+      caseStudy: "/projects/eagle-pathway-case-study",
     },
     {
       title: "Commercial Bank of Ethiopia",
@@ -72,20 +73,6 @@ export const projects = {
       link: "https://taptosign.com",
     },
     {
-      title: "Student-Tutor Marketplace",
-      description:
-        "Real-time marketplace automating tutor-student matching in Ethiopia. Features booking, real-time messaging, notifications, and a full admin panel.",
-      tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      github: "https://github.com/tise-genene/tutor-marketplace",
-    },
-    {
-      title: "AI-Powered HRMS",
-      description:
-        "BSc thesis: AI-driven HR management system for Ethiopian government offices. Automated onboarding, leave tracking, and performance management using ML-based workflows.",
-      tags: ["Python", "Laravel", "MySQL", "Machine Learning"],
-      github: "https://github.com/tise-genene/HR_Process_Optimizer",
-    },
-    {
       title: "EagleBot",
       description:
         "Telegram automation bot managing tutor-student connections, announcements, and resource delivery for 1K+ active users.",
@@ -93,8 +80,22 @@ export const projects = {
       github: "https://github.com/tise-genene/eaglebot",
       telegram: "https://t.me/eagletutorialsservicesbot",
     },
+    {
+      title: "Student-Tutor Marketplace",
+      description:
+        "Real-time marketplace automating tutor-student matching in Ethiopia. Features booking, real-time messaging, notifications, and a full admin panel.",
+      tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+      github: "https://github.com/tise-genene/tutor-marketplace",
+    },
   ],
   otherProjects: [
+    {
+      title: "AI-Powered HRMS",
+      description:
+        "BSc thesis: AI-driven HR management system for Ethiopian government offices. Automated onboarding, leave tracking, and performance management using ML-based workflows.",
+      tags: ["Python", "Laravel", "MySQL", "Machine Learning"],
+      github: "https://github.com/tise-genene/HR_Process_Optimizer",
+    },
     {
       title: "ScholarPath",
       description:

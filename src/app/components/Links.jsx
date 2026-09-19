@@ -2,7 +2,30 @@ import { about, socials } from "@/data/data";
 
 export default function Links() {
   return (
-    <div className="mt-8 mb-8 p-4 border border-base-content/10 rounded-md bg-transparent flex flex-wrap items-center gap-3">
+    <div className="mt-8 mb-8 flex flex-col gap-4">
+      <div className="p-4 border border-base-content/10 rounded-xl bg-transparent">
+        <div className="flex items-center justify-between mb-2.5">
+          <h3 className="text-sm font-semibold text-base-content/80">GitHub Activity</h3>
+          <a
+            href={socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-base-content/60 hover:text-base-content hover:underline"
+          >
+            @tise-genene &#8599;
+          </a>
+        </div>
+        <div className="overflow-x-auto py-1">
+          <img
+            src="https://ghchart.rshah.org/tise-genene"
+            alt="Genene Tise GitHub Contributions"
+            className="w-full min-w-[550px] h-auto"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div className="p-4 border border-base-content/10 rounded-md bg-transparent flex flex-wrap items-center gap-3">
       <a
         href="https://eaglespathway.com"
         title="Eagle Pathway (Live Web)"
@@ -101,6 +124,7 @@ export default function Links() {
         </svg>
         <span className="font-mono text-sm font-semibold">linkedin.md</span>
       </a>
+      </div>
     </div>
   );
 }
