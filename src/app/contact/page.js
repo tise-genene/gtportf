@@ -19,7 +19,7 @@ function Contact() {
             Contact Me
           </h1>
           <div className="p-1">
-            {/* Contact form only — phone and CV links removed per request */}
+            {/* Contact form only - phone and CV links removed per request */}
 
             <ContactForm
               formspreeUrl={forms.formspreeUrl}

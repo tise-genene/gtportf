@@ -25,12 +25,14 @@ export default function Profile() {
         <div>
           <p className="text-base text-base-content/60">{about.role}</p>
           <h2 className="text-lg font-semibold mt-2">
-            I build production-ready Fintech &amp; SaaS products — React,
-            Next.js, Tailwind, Laravel, NodeJS, Python.
+            Founder and full-stack engineer. I build production-ready Fintech,
+            SaaS, and AI products, React, Next.js, Tailwind, Laravel, Node.js,
+            Python.
           </h2>
           <p className="text-sm text-base-content/70 mt-1 max-w-xl">
-            Launched production apps for banks and startups (CBE, Taptosign,
-            EagleBot). Available for senior roles and contract engagements.
+            Founded Eagle Pathway, live on web and Google Play with 1,000+ users.
+            Also shipped production apps for banks and startups (CBE,
+            Taptosign).
           </p>
           <div className="flex gap-2 mt-3">
             <a

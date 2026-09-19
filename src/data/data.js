@@ -2,7 +2,7 @@ export const about = {
   name: "Genene Tise",
   role: "Full-Stack Software Engineer",
   about:
-    "I'm a full-stack engineer based in Addis Ababa, Ethiopia. I build production-grade systems at scale — from high-availability banking infrastructure at Commercial Bank of Ethiopia (40M+ customers) to SaaS products for global startups. Backend-leaning, product-minded, and obsessed with shipping things that actually work. Founder of Eagle Tutorials Services, a growing edtech platform connecting students and tutors across Ethiopia.",
+    "I'm a full-stack engineer and founder based in Addis Ababa, Ethiopia. I founded and built Eagle Pathway, a scholarship guidance and tutor matching platform live on web and Google Play with 1,000+ users and 1,000+ installs, grown with $0 paid marketing. I also ship full-stack features at Commercial Bank of Ethiopia (40M+ customers), and have worked as an AI Trainer evaluating LLM-generated code for AfterQuery. Backend-leaning, product-minded, and focused on shipping things that actually work.",
   email: "tisegenene@gmail.com",
   phone: "+251932508910",
   cv: "/docs/cv.pdf",
@@ -47,7 +47,7 @@ export const projects = {
     {
       title: "Eagle Pathway",
       description:
-        "Full monorepo platform with a Next.js admin dashboard and an Expo mobile app for students and tutors. Supabase backend with PostgreSQL, Auth, Storage, and Realtime. 315+ commits, actively in development.",
+        "Full monorepo platform (web admin + mobile app) for scholarship guidance and tutor matching. Live on Google Play with 1,000+ installs and 1,000+ registered users, grown with $0 paid marketing. Supabase backend with PostgreSQL, Auth, Storage, and Realtime. Chapa payment integration. 315+ commits.",
       tags: ["Next.js", "Expo", "React Native", "Supabase", "TypeScript"],
       github: "https://github.com/Eagle-Pathway/eagle-pathway",
     },
@@ -63,7 +63,7 @@ export const projects = {
     {
       title: "Taptosign",
       description:
-        "Implemented core product features for a digital signing SaaS — document workflows, real-time status updates, and authentication. Delivered fully remotely across time zones in agile sprint cycles.",
+        "Implemented core product features for a digital signing SaaS - document workflows, real-time status updates, and authentication. Delivered fully remotely across time zones in agile sprint cycles.",
       tags: ["React", "Node.js", "REST API"],
       live: "https://taptosign.com",
       link: "https://taptosign.com",
@@ -111,53 +111,74 @@ export const projects = {
 
 export const experience = [
   {
-    title: "Software Engineer — Commercial Bank of Ethiopia",
+    title: "Founder & Full-Stack Engineer, Eagle Pathway",
+    description:
+      "Founded and built Eagle Pathway end to end: Next.js admin dashboard, Expo/React Native mobile app live on Google Play, and Supabase backend (PostgreSQL, Auth, Storage, Realtime). Grew to 1,000+ users and 1,000+ app installs with zero paid marketing, including 500+ sign-ups in the first 24 hours of launch. Integrated Chapa payment gateway with webhook HMAC verification and idempotency keys. Built the scholarship application pipeline and a real-time tutor booking system. Leading incorporation of Eagle Pathway as a registered PLC alongside two co-founders.",
+    date: "2023 to Present",
+    tags: ["Next.js", "Expo", "React Native", "Supabase", "TypeScript"],
+  },
+  {
+    title: "Software Engineer, Commercial Bank of Ethiopia",
     description:
       "Designing and shipping full-stack web and mobile features within a high-availability banking system serving 40M+ customers. Architected secure REST APIs with JWT auth, rate limiting, and third-party integrations. Optimized PostgreSQL queries reducing response time by 60%. Led UI redesign improving Lighthouse performance score by 40%.",
-    date: "Oct 2024 – Present",
+    date: "Nov 2024 to Present",
     tags: ["React", "React Native", "Node.js", "PostgreSQL", "Flutter"],
   },
   {
-    title: "Freelance Full-Stack Engineer — Upwork",
+    title: "AI Trainer, LLM & Software Engineering, AfterQuery",
     description:
-      "Delivering end-to-end fullstack projects for international clients: REST APIs, React frontends, database schema design, and cloud deployments on Vercel and Render. $4K+ earned with consistent 5-star feedback and strong async communication across time zones.",
-    date: "Jan 2025 – Present",
+      "Evaluated and improved AI-generated code and technical solutions. Worked on repository-level programming challenges and model evaluation to improve reliability of AI coding systems.",
+    date: "Apr 2026 to Sep 2026",
+    tags: ["Python", "LLM Evaluation", "Code Review"],
+  },
+  {
+    title: "Freelance Software Engineer, Top Rated, Upwork",
+    description:
+      "Delivered full-stack, AI-powered, and scalable software solutions for international clients, including taptosign.com, a notifications product, and an LMS platform. Consistent 5-star feedback, strong async communication across time zones.",
+    date: "Jan 2025 to Present",
     tags: ["React", "Next.js", "Node.js", "Laravel", "PostgreSQL"],
   },
   {
-    title: "Full-Stack Developer — Taptosign",
+    title: "Full-Stack Developer, Taptosign Technologies",
     description:
       "Implemented document signing workflows, real-time status updates, and user authentication for a digital signing SaaS. Collaborated asynchronously with a remote team across time zones in weekly agile sprints.",
-    date: "Aug 2023 – Nov 2024",
+    date: "Aug 2023 to Nov 2024",
     tags: ["React", "Node.js", "REST API"],
   },
   {
-    title: "Founder & Technical Lead — Eagle Tutorials Services",
+    title: "Founder, Eagle Tutorials Services",
     description:
-      "Founded and built a tutor-student matchmaking platform with 1K+ active members across Ethiopia. Automated matching logic reduced admin workload by 75%. Now evolving into Eagle Pathway — a cross-platform SaaS. Also organizes an active Telegram developer community.",
-    date: "2023 – Present",
-    tags: ["Next.js", "Python", "Supabase", "Telegram API"],
+      "Founded a Telegram-based tutor-student matching service, 200+ students, 100+ tutors. Automated 75% of manual admin matching work. This evolved into Eagle Pathway.",
+    date: "Jul 2023 to Present",
+    tags: ["Telegram API", "Python", "Supabase"],
   },
   {
-    title: "Emerging Technologist Fellow — Millennium Campus Network",
+    title: "Emerging Technologist Fellow, Millennium Campus Network",
     description:
       "Designed and delivered programming curriculum to 100+ high-school students across Ethiopia. Featured on the MCN website for outstanding contribution.",
-    date: "Aug 2023 – Jan 2024",
+    date: "Aug 2023 to Jan 2024",
     tags: ["Teaching", "Python", "Web Dev"],
   },
   {
-    title: "Software Engineer Intern — Ethiopian Science and Technology Agency",
+    title: "Software Engineer Intern, Ethiopian Science and Technology Agency",
     description:
       "Contributed two fully functional HRMS modules (onboarding and leave management) using Laravel and MySQL. Focused on reliability, data integrity, and clean code architecture.",
-    date: "Jun 2023 – Aug 2023",
+    date: "Jun 2023 to Aug 2023",
     tags: ["Laravel", "MySQL", "PHP"],
+  },
+  {
+    title: "Freelance Web Developer, Independent (Local Clients)",
+    description:
+      "Built fixed-price web projects for local businesses, including restaurant and cafe websites, inventory management systems, and food and coffee ordering platforms, working directly with owners from requirements through launch.",
+    date: "2021 to Aug 2023",
+    tags: ["Web Development", "PHP", "JavaScript"],
   },
 ];
 
 export const skillCategories = [
   {
     category: "Backend",
-    skills: ["Laravel", "Node.js", "REST APIs", "PostgreSQL", "MySQL", "MongoDB", "Supabase"],
+    skills: ["Node.js", "NestJS", "Laravel", "REST APIs", "PostgreSQL", "MySQL", "MongoDB", "Supabase", "Redis"],
   },
   {
     category: "Frontend",
@@ -165,7 +186,7 @@ export const skillCategories = [
   },
   {
     category: "DevOps / Tools",
-    skills: ["Git", "Vercel", "Render", "Docker", "CI/CD", "Agile"],
+    skills: ["Git", "Docker", "CI/CD", "Vercel", "Render", "Nginx", "Agile"],
   },
   {
     category: "AI / CS",
@@ -179,7 +200,7 @@ export const education = [
     institution: "Addis Ababa University",
     grade: "GPA 3.51 · Great Distinction",
     note: "Thesis: AI-Powered HRMS for Ethiopian Government Offices",
-    year: "2021 – 2024",
+    year: "2021 - 2024",
   },
   {
     degree: "Digital Product Development From Scratch",
@@ -200,7 +221,7 @@ export const education = [
 export const volunteering = [
   {
     title: "Volunteer Instructor & Workshop Facilitator",
-    location: "Addis Ababa · 2023 – Present",
+    location: "Addis Ababa · 2023 - Present",
     points: [
       "Taught C++, Python, and web development to 100+ early-career students through community-led sessions.",
       "Runs free workshops on freelancing and software development for aspiring developers.",
