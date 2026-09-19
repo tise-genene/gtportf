@@ -17,7 +17,7 @@ function Projects() {
                 <div className="flex flex-col gap-2">
                     {projects.pinProjects.map((item, index) => (
                         <a
-                            href={item.link}
+                            href={item.link || item.github}
                             key={index}
                             target="_blank"
                             rel="noopener noreferrer"

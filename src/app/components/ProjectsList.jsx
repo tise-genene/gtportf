@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { projects } from "@/data/data";
 import Link from "next/link";
 
@@ -99,6 +99,28 @@ export default function ProjectsList() {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path d="M12 2L2 7l10 5 10-5-10-5zm0 7.5L4 7.14v6.72l8 4 8-4V7.14L12 9.5z" />
+                    </svg>
+                  </a>
+                )}
+
+                {item.playstore && (
+                  <a
+                    href={item.playstore}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Download on Google Play"
+                    aria-label="Download on Google Play"
+                    className="p-2 rounded-md hover:bg-base-200"
+                  >
+                    {/* Google Play icon */}
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M3.609 1.814L13.793 12 3.61 22.186a2.203 2.203 0 0 1-.61-.908c-.144-.45-.22-.924-.22-1.408V4.13c0-.484.076-.958.22-1.408a2.2 2.2 0 0 1 .609-.908zm11.24 11.243l2.424 2.424-11.89 6.842 9.466-9.266zm2.424-2.424l-2.424 2.424-9.466-9.266 11.89 6.842zm1.057 1.057l3.654 2.102c.805.463.805 1.22 0 1.684l-3.654 2.102-2.112-2.112 2.112-2.112z" />
                     </svg>
                   </a>
                 )}

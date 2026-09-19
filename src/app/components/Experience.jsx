@@ -1,4 +1,4 @@
-﻿import { experience } from "../../data/data";
+import { experience } from "../../data/data";
 
 export default function Experience() {
   return (
@@ -37,6 +37,21 @@ export default function Experience() {
                         >
                           {tag}
                         </span>
+                      ))}
+                    </div>
+                  )}
+                  {item.links && item.links.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-2.5">
+                      {item.links.map((lnk, i) => (
+                        <a
+                          key={i}
+                          href={lnk.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs border border-base-content/20 hover:border-base-content/70 rounded-md px-3 py-1 text-base-content/80 hover:text-base-content hover:bg-base-200 transition-colors inline-flex items-center gap-1 font-medium"
+                        >
+                          {lnk.label}
+                        </a>
                       ))}
                     </div>
                   )}

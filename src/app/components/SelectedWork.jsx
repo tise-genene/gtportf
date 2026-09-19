@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import Link from "next/link";
 import { projects } from "@/data/data";
 
@@ -27,15 +27,37 @@ export default function SelectedWork() {
           >
             <div className="flex items-center justify-between">
               <h3 className="font-semibold text-lg">{item.title}</h3>
-              <a
-                href={item.link || item.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Open ${item.title}`}
-                className="text-base-content/60 hover:text-base-content/90 text-lg leading-none"
-              >
-                &#8599;
-              </a>
+              <div className="flex items-center gap-2">
+                {item.playstore && (
+                  <a
+                    href={item.playstore}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Download ${item.title} on Google Play`}
+                    title="Download on Google Play"
+                    className="text-base-content/60 hover:text-base-content"
+                  >
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M3.609 1.814L13.793 12 3.61 22.186a2.203 2.203 0 0 1-.61-.908c-.144-.45-.22-.924-.22-1.408V4.13c0-.484.076-.958.22-1.408a2.2 2.2 0 0 1 .609-.908zm11.24 11.243l2.424 2.424-11.89 6.842 9.466-9.266zm2.424-2.424l-2.424 2.424-9.466-9.266 11.89 6.842zm1.057 1.057l3.654 2.102c.805.463.805 1.22 0 1.684l-3.654 2.102-2.112-2.112 2.112-2.112z" />
+                    </svg>
+                  </a>
+                )}
+                <a
+                  href={item.link || item.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${item.title}`}
+                  className="text-base-content/60 hover:text-base-content/90 text-lg leading-none"
+                >
+                  &#8599;
+                </a>
+              </div>
             </div>
             <p className="text-sm text-base-content/80 mt-2">
               {item.description}

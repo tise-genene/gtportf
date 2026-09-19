@@ -49,6 +49,9 @@ export const projects = {
       description:
         "Full monorepo platform (web admin + mobile app) for scholarship guidance and tutor matching. Live on Google Play with 1,000+ installs and 1,000+ registered users, grown with $0 paid marketing. Supabase backend with PostgreSQL, Auth, Storage, and Realtime. Chapa payment integration. 315+ commits.",
       tags: ["Next.js", "Expo", "React Native", "Supabase", "TypeScript"],
+      link: "https://eaglespathway.com",
+      live: "https://eaglespathway.com",
+      playstore: "https://play.google.com/store/apps/details?id=com.eaglepathway.app",
       github: "https://github.com/Eagle-Pathway/eagle-pathway",
     },
     {
@@ -116,6 +119,16 @@ export const experience = [
       "Founded and built Eagle Pathway end to end: Next.js admin dashboard, Expo/React Native mobile app live on Google Play, and Supabase backend (PostgreSQL, Auth, Storage, Realtime). Grew to 1,000+ users and 1,000+ app installs with zero paid marketing, including 500+ sign-ups in the first 24 hours of launch. Integrated Chapa payment gateway with webhook HMAC verification and idempotency keys. Built the scholarship application pipeline and a real-time tutor booking system. Leading incorporation of Eagle Pathway as a registered PLC alongside two co-founders.",
     date: "2023 to Present",
     tags: ["Next.js", "Expo", "React Native", "Supabase", "TypeScript"],
+    links: [
+      {
+        label: "📲 Download App",
+        url: "https://play.google.com/store/apps/details?id=com.eaglepathway.app",
+      },
+      {
+        label: "🌐 eaglespathway.com",
+        url: "https://eaglespathway.com",
+      },
+    ],
   },
   {
     title: "Software Engineer, Commercial Bank of Ethiopia",
